@@ -10,13 +10,14 @@
     <?php
 
       $scores = [80, 60, 55, 40, 100, 25, 80, 95, 30, 60];
-
+      $scoresLength = count($scores);
+      
       $sum = 0;
-      for ($i = 0; $i<10; $i++) {
+      for ($i = 0; $i<$scoresLength; $i++) {
         $sum += $scores[$i];
       }
 
-      $ave = $sum / count($scores);
+      $ave = $sum / $scoresLength;
 
       echo "合計値 : {$sum}<br>平均値 : {$ave}";
     ?>
